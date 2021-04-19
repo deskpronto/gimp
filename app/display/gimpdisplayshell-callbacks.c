@@ -644,12 +644,7 @@ gimp_display_shell_canvas_draw_drop_zone (GimpDisplayShell *shell,
 
     layout = gtk_widget_create_pango_layout (shell->canvas, NULL);
 
-    msg = g_strdup_printf (_(" \n\n"
-                             " \n\n"
-                             " "
-                             " \n"
-                             " "),
-                             GIMP_GIT_VERSION_ABBREV);
+    msg = g_strdup_printf (_(" "), GIMP_GIT_VERSION_ABBREV);
     pango_layout_set_markup (layout, msg, -1);
     g_free (msg);
     pango_layout_set_alignment (layout, PANGO_ALIGN_CENTER);
