@@ -746,8 +746,7 @@ about_dialog_add_unstable_message (GtkWidget *vbox)
   GtkWidget *label;
   gchar     *text;
 
-  text = g_strdup_printf (_(" \n"
-                            " "), GIMP_GIT_VERSION_ABBREV);
+  text = g_strdup_printf (_(" "), GIMP_GIT_VERSION_ABBREV);
   label = gtk_label_new (text);
   g_free (text);
 
